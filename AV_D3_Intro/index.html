@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>D3 Tutorial</title>
+		<style type="text/css">
+			#myText{
+				text-align: center; /*align our text in center*/
+				color: teal; /*set color to teal*/
+				font-family: Tahoma; /*change font family */
+				font-size: 66px; /*set font size to 66 pixels*/
+			}
+			#image{
+				visibility: hidden;
+				width: 100%;
+				height: 50%;
+			}
+		</style>
+	</head>
+	<body>
+		<p onclick="show()" id="myText">Hello Buddy! Click here!</p>
+		<img src="happybday.gif" id="image">
+		<script type="text/javascript">
+			var show = function(){
+				var txt = document.getElementById("myText"),
+					img = document.getElementById("image");
+
+				txt.innerHTML = "Happy Birthday! :D";
+				img.style.visibility = "visible";
+			}
+		</script>
+	</body>
+</html>
+
