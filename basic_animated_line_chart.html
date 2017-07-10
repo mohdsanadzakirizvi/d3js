@@ -5,7 +5,7 @@
 
 	<style type="text/css">
 
-		body{ font: Arial 18px; }
+		body{ font: Arial 18px; text-align: center; }
 
 		path{
 			stroke: steelblue;
@@ -22,7 +22,6 @@
 	</style>
 </head>
 <body>
-
 <script type="text/javascript" src="d3.min.js"></script>
 <script type="text/javascript">
 	//Set margins and sizes
@@ -30,7 +29,7 @@
 		top: 20,
 		bottom: 50,
 		right: 30,
-		left: 30
+		left: 50
 	};
 	var width = 700 - margin.left - margin.right;
 	var height = 500 - margin.top - margin.bottom;
@@ -87,10 +86,6 @@
 		var x = svgElement.append("g")
 					.attr("transform", "translate(0,"+height+")")
 					.call(xAxis);
-
-		x.append("text")
-			.text("Date along x axis")
-			.attr("transform","translate("+width/2+","+margin.bottom+")")
 
 		//Add Y Axis
 		svgElement.append("g")
