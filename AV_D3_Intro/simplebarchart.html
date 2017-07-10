@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script src="https://d3js.org/d3.v3.js"></script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        //Data
+        var data = [5, 10, 30, 8, 45, 24, 16, 55, 60, 45, 32, 18, 11, 3];
+
+        //Create an SVG element
+        var svg = d3.select("body").append("svg").attr({
+            "width": 400,
+            "height": 400
+        });
+
+        //Create bars
+        var bars = svg.selectAll("rect").data(data).enter().append("rect").attr("width", "25").attr("height", function(d) {
+            return d * 5;
+        });
+
+        //Set x and y for bars
+        bars.attr("x", function(d, i) {
+                return i * 30;
+            })
+            .attr("y", function(d) {
+                return 400 - d * 5;
+            })
+
+        //Giving colour to bars
+        bars.attr("fill", "steelblue");
+
+        //Creating text elements
+        var texts = svg.selectAll("text")
+            .data(data)
+            .enter()
+            .append("text")
+            .text(function(d) {
+                return d;
+            });
+
+        //Giving Coordinates to text
+        texts.attr("x", function(d, i) {
+                return i * 30;
+            })
+            .attr("y", function(d) {
+                return 400 - d * 5;
+            })
+    </script>
+</body>
+
+</html>
