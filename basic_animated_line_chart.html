@@ -20,8 +20,10 @@
 				shape-rendering: crispEdges;
 			}
 	</style>
+	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
+<h3>Animated Line Chart</h3>
 <script type="text/javascript" src="d3.min.js"></script>
 <script type="text/javascript">
 	//Set margins and sizes
@@ -88,8 +90,16 @@
 					.call(xAxis);
 
 		//Add Y Axis
-		svgElement.append("g")
+		var y = svgElement.append("g")
 					.call(yAxis);
+
+		y.append("text")
+			.attr("fill", "#000")
+			.attr("transform", "rotate(-90)")
+			.attr("y", 6)
+			.attr("dy", "0.71em")
+			.attr("text-anchor", "end")
+			.text("Price ($)");
 
 		//Length of path
 		var totalLength = path.node().getTotalLength();
