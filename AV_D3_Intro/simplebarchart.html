@@ -9,16 +9,16 @@
 <body>
     <script type="text/javascript">
         //Data
-        var data = [5, 10, 30, 8, 45, 24, 16, 55, 60, 45, 32, 18, 11, 3];
+        var data_values = [5, 10, 30, 8, 45, 24, 16, 55, 60, 45, 32, 18, 11, 7];
 
         //Create an SVG element
         var svg = d3.select("body").append("svg").attr({
-            "width": 400,
+            "width": 450,
             "height": 400
         });
 
         //Create bars
-        var bars = svg.selectAll("rect").data(data).enter().append("rect").attr("width", "25").attr("height", function(d) {
+        var bars = svg.selectAll("rect").data(data_values).enter().append("rect").attr("width", "25").attr("height", function(d) {
             return d * 5;
         });
 
@@ -35,26 +35,35 @@
 
         //Creating text elements
         var texts = svg.selectAll("text")
-            .data(data)
+            .data(data_values)
             .enter()
             .append("text")
             .text(function(d) {
                 return d;
             });
 
-        //Giving Coordinates to text
+        var textPadding = 2;
+
+        // Giving Coordinates to text
         texts.attr("x", function(d, i) {
-                return i * 30;
+                return i * 30 + textPadding;
             })
             .attr("y", function(d) {
-                return 400 - d * 5;
+                return 400 - d * 5 - textPadding;
             })
+            .style("font-family","tahoma");
 
-        bars.on("mouseover", function(){
-            d3.select(this).attr("fill","brown");
-        }).on("mouseout", function(){
-            d3.select(this).attr("fill","steelblue");
-        })
+        //Highlighting the extremes    
+        var max = d3.max(data_values);
+        var min = d3.min(data_values);
+
+        bars.filter(function(d){
+            return d==max;
+        }).attr("fill","red");
+        
+        bars.filter(function(d){
+            return d==min;
+        }).attr("fill","darkorange");
 
     </script>
 </body>
