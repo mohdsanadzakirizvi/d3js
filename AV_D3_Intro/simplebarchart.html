@@ -33,37 +33,17 @@
         //Giving colour to bars
         bars.attr("fill", "steelblue");
 
-        //Creating text elements
-        var texts = svg.selectAll("text")
-            .data(data_values)
-            .enter()
-            .append("text")
-            .text(function(d) {
-                return d;
-            });
-
-        var textPadding = 2;
-
-        // Giving Coordinates to text
-        texts.attr("x", function(d, i) {
-                return i * 30 + textPadding;
-            })
-            .attr("y", function(d) {
-                return 400 - d * 5 - textPadding;
-            })
-            .style("font-family","tahoma");
-
         //Highlighting the extremes    
         var max = d3.max(data_values);
         var min = d3.min(data_values);
 
         bars.filter(function(d){
             return d==max;
-        }).attr("fill","red");
+        }).attr("fill","green");
         
         bars.filter(function(d){
             return d==min;
-        }).attr("fill","darkorange");
+        }).attr("fill","red");
 
     </script>
 </body>
