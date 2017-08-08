@@ -41,7 +41,7 @@
 	var yAxis = d3.svg.axis().scale(yScale)
 						.orient("left");
 
-	//Create a line generator
+	//Create a area generator
 	var area = d3.svg.area()
 							.x(function(d){
 								return xScale(d.date);
@@ -69,6 +69,7 @@
 		xScale.domain(d3.extent(data, function(d){ return d.date; }));
 		yScale.domain([0, d3.max(data, function(d){ return d.close; })]);
 		area.y0(yScale(0));
+		
 		//append the svg path
 		var path = svgElement.append("path")
 					.attr("d", area(data))
