@@ -1,540 +1,648 @@
 {
-  "nodes": [{
-      "character": "Grenn",
-      "id": 0,
-      "influence": 4
-    },
-    {
-      "character": "Samwell",
-      "id": 1,
-      "influence": 15
-    },
-    {
-      "character": "Jaime",
-      "id": 2,
-      "influence": 24
-    },
-    {
-      "character": "Robert",
-      "id": 3,
-      "influence": 18
-    },
-    {
-      "character": "Tyrion",
-      "id": 4,
-      "influence": 36
-    },
-    {
-      "character": "Tywin",
-      "id": 5,
-      "influence": 22
-    },
-    {
-      "character": "Mance",
-      "id": 6,
-      "influence": 12
-    },
-    {
-      "character": "Oberyn",
-      "id": 7,
-      "influence": 7
-    },
-    {
-      "character": "Anguy",
-      "id": 8,
-      "influence": 2
-    },
-    {
-      "character": "Beric",
-      "id": 9,
-      "influence": 6
-    },
-    {
-      "character": "Bran",
-      "id": 10,
-      "influence": 14
-    },
-    {
-      "character": "Brynden",
-      "id": 11,
-      "influence": 8
-    },
-    {
-      "character": "Cersei",
-      "id": 12,
-      "influence": 20
-    },
-    {
-      "character": "Gendry",
-      "id": 13,
-      "influence": 4
-    },
-    {
-      "character": "Gregor",
-      "id": 14,
-      "influence": 12
-    },
-    {
-      "character": "Joffrey",
-      "id": 15,
-      "influence": 18
-    },
-    {
-      "character": "Jon",
-      "id": 16,
-      "influence": 26
-    },
-    {
-      "character": "Rickon",
-      "id": 17,
-      "influence": 6
-    },
-    {
-      "character": "Roose",
-      "id": 18,
-      "influence": 4
-    },
-    {
-      "character": "Sandor",
-      "id": 19,
-      "influence": 13
-    },
-    {
-      "character": "Thoros",
-      "id": 20,
-      "influence": 5
-    },
-    {
-      "character": "Loras",
-      "id": 21,
-      "influence": 9
-    },
-    {
-      "character": "Barristan",
-      "id": 22,
-      "influence": 6
-    },
-    {
-      "character": "Illyrio",
-      "id": 23,
-      "influence": 1
-    },
-    {
-      "character": "Hodor",
-      "id": 24,
-      "influence": 4
-    },
-    {
-      "character": "Jojen",
-      "id": 25,
-      "influence": 4
-    },
-    {
-      "character": "Luwin",
-      "id": 26,
-      "influence": 2
-    },
-    {
-      "character": "Meera",
-      "id": 27,
-      "influence": 5
-    },
-    {
-      "character": "Nan",
-      "id": 28,
-      "influence": 2
-    },
-    {
-      "character": "Theon",
-      "id": 29,
-      "influence": 4
-    },
-    {
-      "character": "Podrick",
-      "id": 30,
-      "influence": 5
-    },
-    {
-      "character": "Lothar",
-      "id": 31,
-      "influence": 5
-    },
-    {
-      "character": "Walder",
-      "id": 32,
-      "influence": 8
-    },
-    {
-      "character": "Brienne",
-      "id": 33,
-      "influence": 7
-    },
-    {
-      "character": "Edmure",
-      "id": 34,
-      "influence": 8
-    },
-    {
-      "character": "Hoster",
-      "id": 35,
-      "influence": 3
-    },
-    {
-      "character": "Jeyne",
-      "id": 36,
-      "influence": 2
-    },
-    {
-      "character": "Lysa",
-      "id": 37,
-      "influence": 10
-    },
-    {
-      "character": "Petyr",
-      "id": 38,
-      "influence": 7
-    },
-    {
-      "character": "Robb",
-      "id": 39,
-      "influence": 25
-    },
-    {
-      "character": "Roslin",
-      "id": 40,
-      "influence": 4
-    },
-    {
-      "character": "Sansa",
-      "id": 41,
-      "influence": 26
-    },
-    {
-      "character": "Stannis",
-      "id": 42,
-      "influence": 14
-    },
-    {
-      "character": "Bronn",
-      "id": 43,
-      "influence": 4
-    },
-    {
-      "character": "Elia",
-      "id": 44,
-      "influence": 5
-    },
-    {
-      "character": "Ilyn",
-      "id": 45,
-      "influence": 6
-    },
-    {
-      "character": "Meryn",
-      "id": 46,
-      "influence": 7
-    },
-    {
-      "character": "Pycelle",
-      "id": 47,
-      "influence": 4
-    },
-    {
-      "character": "Shae",
-      "id": 48,
-      "influence": 5
-    },
-    {
-      "character": "Varys",
-      "id": 49,
-      "influence": 7
-    },
-    {
-      "character": "Karl",
-      "id": 50,
-      "influence": 1
-    },
-    {
-      "character": "Drogo",
-      "id": 51,
-      "influence": 4
-    },
-    {
-      "character": "Irri",
-      "id": 52,
-      "influence": 4
-    },
-    {
-      "character": "Aegon",
-      "id": 53,
-      "influence": 1
-    },
-    {
-      "character": "Belwas",
-      "id": 54,
-      "influence": 4
-    },
-    {
-      "character": "Daario",
-      "id": 55,
-      "influence": 4
-    },
-    {
-      "character": "Jorah",
-      "id": 56,
-      "influence": 6
-    },
-    {
-      "character": "Kraznys",
-      "id": 57,
-      "influence": 1
-    },
-    {
-      "character": "Missandei",
-      "id": 58,
-      "influence": 2
-    },
-    {
-      "character": "Rakharo",
-      "id": 59,
-      "influence": 1
-    },
-    {
-      "character": "Rhaegar",
-      "id": 60,
-      "influence": 6
-    },
-    {
-      "character": "Viserys",
-      "id": 61,
-      "influence": 3
-    },
-    {
-      "character": "Worm",
-      "id": 62,
-      "influence": 1
-    },
-    {
-      "character": "Cressen",
-      "id": 63,
-      "influence": 1
-    },
-    {
-      "character": "Salladhor",
-      "id": 64,
-      "influence": 1
-    },
-    {
-      "character": "Arya",
-      "id": 65,
-      "influence": 19
-    },
-    {
-      "character": "Catelyn",
-      "id": 66,
-      "influence": 18
-    },
-    {
-      "character": "Craster",
-      "id": 67,
-      "influence": 5
-    },
-    {
-      "character": "Balon",
-      "id": 68,
-      "influence": 6
-    },
-    {
-      "character": "Qyburn",
-      "id": 69,
-      "influence": 1
-    },
-    {
-      "character": "Renly",
-      "id": 70,
-      "influence": 8
-    },
-    {
-      "character": "Tommen",
-      "id": 71,
-      "influence": 5
-    },
-    {
-      "character": "Alliser",
-      "id": 72,
-      "influence": 3
-    },
-    {
-      "character": "Bowen",
-      "id": 73,
-      "influence": 2
-    },
-    {
-      "character": "Kevan",
-      "id": 74,
-      "influence": 6
-    },
-    {
-      "character": "Margaery",
-      "id": 75,
-      "influence": 7
-    },
-    {
-      "character": "Myrcella",
-      "id": 76,
-      "influence": 4
-    },
-    {
-      "character": "Aemon",
-      "id": 77,
-      "influence": 5
-    },
-    {
-      "character": "Dalla",
-      "id": 78,
-      "influence": 3
-    },
-    {
-      "character": "Eddison",
-      "id": 79,
-      "influence": 3
-    },
-    {
-      "character": "Gilly",
-      "id": 80,
-      "influence": 4
-    },
-    {
-      "character": "Janos",
-      "id": 81,
-      "influence": 6
-    },
-    {
-      "character": "Melisandre",
-      "id": 82,
-      "influence": 4
-    },
-    {
-      "character": "Orell",
-      "id": 83,
-      "influence": 1
-    },
-    {
-      "character": "Qhorin",
-      "id": 84,
-      "influence": 5
-    },
-    {
-      "character": "Rattleshirt",
-      "id": 85,
-      "influence": 4
-    },
-    {
-      "character": "Styr",
-      "id": 86,
-      "influence": 2
-    },
-    {
-      "character": "Val",
-      "id": 87,
-      "influence": 4
-    },
-    {
-      "character": "Ygritte",
-      "id": 88,
-      "influence": 4
-    },
-    {
-      "character": "Lancel",
-      "id": 89,
-      "influence": 1
-    },
-    {
-      "character": "Olenna",
-      "id": 90,
-      "influence": 2
-    },
-    {
-      "character": "Marillion",
-      "id": 91,
-      "influence": 3
-    },
-    {
-      "character": "Robert Arryn",
-      "id": 92,
-      "influence": 3
-    },
-    {
-      "character": "Davos",
-      "id": 93,
-      "influence": 5
-    },
-    {
-      "character": "Ellaria",
-      "id": 94,
-      "influence": 2
-    },
-    {
-      "character": "Mace",
-      "id": 95,
-      "influence": 3
-    },
-    {
-      "character": "Ramsay",
-      "id": 96,
-      "influence": 1
-    },
-    {
-      "character": "Rickard",
-      "id": 97,
-      "influence": 2
-    },
-    {
-      "character": "Chataya",
-      "id": 98,
-      "influence": 2
-    },
-    {
-      "character": "Doran",
-      "id": 99,
-      "influence": 1
-    },
-    {
-      "character": "Aerys",
-      "id": 100,
-      "influence": 4
-    },
-    {
-      "character": "Amory",
-      "id": 101,
-      "influence": 1
-    },
-    {
-      "character": "Daenerys",
-      "id": 102,
-      "influence": 14
-    },
-    {
-      "character": "Eddard",
-      "id": 103,
-      "influence": 12
-    },
-    {
-      "character": "Jon Arryn",
-      "id": 104,
-      "influence": 2
-    },
-    {
-      "character": "Shireen",
-      "id": 105,
-      "influence": 1
-    },
-    {
-      "character": "Walton",
-      "id": 106,
-      "influence": 1
-    }
-  ],
+  "nodes": [
+  {
+    "character": "Grenn",
+    "id": 0,
+    "influence": 4,
+    "zone": 0
+  },
+  {
+    "character": "Samwell",
+    "id": 1,
+    "influence": 15,
+    "zone": 0
+  },
+  {
+    "character": "Jaime",
+    "id": 2,
+    "influence": 24,
+    "zone": 3
+  },
+  {
+    "character": "Robert",
+    "id": 3,
+    "influence": 18,
+    "zone": 3
+  },
+  {
+    "character": "Tyrion",
+    "id": 4,
+    "influence": 36,
+    "zone": 3
+  },
+  {
+    "character": "Tywin",
+    "id": 5,
+    "influence": 22,
+    "zone": 3
+  },
+  {
+    "character": "Mance",
+    "id": 6,
+    "influence": 12,
+    "zone": 0
+  },
+  {
+    "character": "Oberyn",
+    "id": 7,
+    "influence": 7,
+    "zone": 3
+  },
+  {
+    "character": "Anguy",
+    "id": 8,
+    "influence": 2,
+    "zone": 5
+  },
+  {
+    "character": "Beric",
+    "id": 9,
+    "influence": 6,
+    "zone": 5
+  },
+  {
+    "character": "Bran",
+    "id": 10,
+    "influence": 14,
+    "zone": 2
+  },
+  {
+    "character": "Brynden",
+    "id": 11,
+    "influence": 8,
+    "zone": 1
+  },
+  {
+    "character": "Cersei",
+    "id": 12,
+    "influence": 20,
+    "zone": 3
+  },
+  {
+    "character": "Gendry",
+    "id": 13,
+    "influence": 4,
+    "zone": 5
+  },
+  {
+    "character": "Gregor",
+    "id": 14,
+    "influence": 12,
+    "zone": 3
+  },
+  {
+    "character": "Joffrey",
+    "id": 15,
+    "influence": 18,
+    "zone": 3
+  },
+  {
+    "character": "Jon",
+    "id": 16,
+    "influence": 26,
+    "zone": 0
+  },
+  {
+    "character": "Rickon",
+    "id": 17,
+    "influence": 6,
+    "zone": 2
+  },
+  {
+    "character": "Roose",
+    "id": 18,
+    "influence": 4,
+    "zone": 1
+  },
+  {
+    "character": "Sandor",
+    "id": 19,
+    "influence": 13,
+    "zone": 5
+  },
+  {
+    "character": "Thoros",
+    "id": 20,
+    "influence": 5,
+    "zone": 5
+  },
+  {
+    "character": "Loras",
+    "id": 21,
+    "influence": 9,
+    "zone": 3
+  },
+  {
+    "character": "Barristan",
+    "id": 22,
+    "influence": 6,
+    "zone": 6
+  },
+  {
+    "character": "Illyrio",
+    "id": 23,
+    "influence": 1,
+    "zone": 6
+  },
+  {
+    "character": "Hodor",
+    "id": 24,
+    "influence": 4,
+    "zone": 2
+  },
+  {
+    "character": "Jojen",
+    "id": 25,
+    "influence": 4,
+    "zone": 2
+  },
+  {
+    "character": "Luwin",
+    "id": 26,
+    "influence": 2,
+    "zone": 2
+  },
+  {
+    "character": "Meera",
+    "id": 27,
+    "influence": 5,
+    "zone": 2
+  },
+  {
+    "character": "Nan",
+    "id": 28,
+    "influence": 2,
+    "zone": 2
+  },
+  {
+    "character": "Theon",
+    "id": 29,
+    "influence": 4,
+    "zone": 2
+  },
+  {
+    "character": "Podrick",
+    "id": 30,
+    "influence": 5,
+    "zone": 3
+  },
+  {
+    "character": "Lothar",
+    "id": 31,
+    "influence": 5,
+    "zone": 1
+  },
+  {
+    "character": "Walder",
+    "id": 32,
+    "influence": 8,
+    "zone": 1
+  },
+  {
+    "character": "Brienne",
+    "id": 33,
+    "influence": 7,
+    "zone": 3
+  },
+  {
+    "character": "Edmure",
+    "id": 34,
+    "influence": 8,
+    "zone": 1
+  },
+  {
+    "character": "Hoster",
+    "id": 35,
+    "influence": 3,
+    "zone": 1
+  },
+  {
+    "character": "Jeyne",
+    "id": 36,
+    "influence": 2,
+    "zone": 1
+  },
+  {
+    "character": "Lysa",
+    "id": 37,
+    "influence": 10,
+    "zone": 3
+  },
+  {
+    "character": "Petyr",
+    "id": 38,
+    "influence": 7,
+    "zone": 3
+  },
+  {
+    "character": "Robb",
+    "id": 39,
+    "influence": 25,
+    "zone": 1
+  },
+  {
+    "character": "Roslin",
+    "id": 40,
+    "influence": 4,
+    "zone": 1
+  },
+  {
+    "character": "Sansa",
+    "id": 41,
+    "influence": 26,
+    "zone": 3
+  },
+  {
+    "character": "Stannis",
+    "id": 42,
+    "influence": 14,
+    "zone": 4
+  },
+  {
+    "character": "Bronn",
+    "id": 43,
+    "influence": 4,
+    "zone": 3
+  },
+  {
+    "character": "Elia",
+    "id": 44,
+    "influence": 5,
+    "zone": 3
+  },
+  {
+    "character": "Ilyn",
+    "id": 45,
+    "influence": 6,
+    "zone": 3
+  },
+  {
+    "character": "Meryn",
+    "id": 46,
+    "influence": 7,
+    "zone": 3
+  },
+  {
+    "character": "Pycelle",
+    "id": 47,
+    "influence": 4,
+    "zone": 3
+  },
+  {
+    "character": "Shae",
+    "id": 48,
+    "influence": 5,
+    "zone": 3
+  },
+  {
+    "character": "Varys",
+    "id": 49,
+    "influence": 7,
+    "zone": 3
+  },
+  {
+    "character": "Karl",
+    "id": 50,
+    "influence": 1,
+    "zone": 0
+  },
+  {
+    "character": "Drogo",
+    "id": 51,
+    "influence": 4,
+    "zone": 6
+  },
+  {
+    "character": "Irri",
+    "id": 52,
+    "influence": 4,
+    "zone": 6
+  },
+  {
+    "character": "Aegon",
+    "id": 53,
+    "influence": 1,
+    "zone": 6
+  },
+  {
+    "character": "Belwas",
+    "id": 54,
+    "influence": 4,
+    "zone": 6
+  },
+  {
+    "character": "Daario",
+    "id": 55,
+    "influence": 4,
+    "zone": 6
+  },
+  {
+    "character": "Jorah",
+    "id": 56,
+    "influence": 6,
+    "zone": 6
+  },
+  {
+    "character": "Kraznys",
+    "id": 57,
+    "influence": 1,
+    "zone": 6
+  },
+  {
+    "character": "Missandei",
+    "id": 58,
+    "influence": 2,
+    "zone": 6
+  },
+  {
+    "character": "Rakharo",
+    "id": 59,
+    "influence": 1,
+    "zone": 6
+  },
+  {
+    "character": "Rhaegar",
+    "id": 60,
+    "influence": 6,
+    "zone": 6
+  },
+  {
+    "character": "Viserys",
+    "id": 61,
+    "influence": 3,
+    "zone": 6
+  },
+  {
+    "character": "Worm",
+    "id": 62,
+    "influence": 1,
+    "zone": 6
+  },
+  {
+    "character": "Cressen",
+    "id": 63,
+    "influence": 1,
+    "zone": 4
+  },
+  {
+    "character": "Salladhor",
+    "id": 64,
+    "influence": 1,
+    "zone": 4
+  },
+  {
+    "character": "Arya",
+    "id": 65,
+    "influence": 19,
+    "zone": 5
+  },
+  {
+    "character": "Catelyn",
+    "id": 66,
+    "influence": 18,
+    "zone": 1
+  },
+  {
+    "character": "Craster",
+    "id": 67,
+    "influence": 5,
+    "zone": 0
+  },
+  {
+    "character": "Balon",
+    "id": 68,
+    "influence": 6,
+    "zone": 3
+  },
+  {
+    "character": "Qyburn",
+    "id": 69,
+    "influence": 1,
+    "zone": 3
+  },
+  {
+    "character": "Renly",
+    "id": 70,
+    "influence": 8,
+    "zone": 3
+  },
+  {
+    "character": "Tommen",
+    "id": 71,
+    "influence": 5,
+    "zone": 3
+  },
+  {
+    "character": "Alliser",
+    "id": 72,
+    "influence": 3,
+    "zone": 0
+  },
+  {
+    "character": "Bowen",
+    "id": 73,
+    "influence": 2,
+    "zone": 0
+  },
+  {
+    "character": "Kevan",
+    "id": 74,
+    "influence": 6,
+    "zone": 3
+  },
+  {
+    "character": "Margaery",
+    "id": 75,
+    "influence": 7,
+    "zone": 3
+  },
+  {
+    "character": "Myrcella",
+    "id": 76,
+    "influence": 4,
+    "zone": 3
+  },
+  {
+    "character": "Aemon",
+    "id": 77,
+    "influence": 5,
+    "zone": 0
+  },
+  {
+    "character": "Dalla",
+    "id": 78,
+    "influence": 3,
+    "zone": 0
+  },
+  {
+    "character": "Eddison",
+    "id": 79,
+    "influence": 3,
+    "zone": 0
+  },
+  {
+    "character": "Gilly",
+    "id": 80,
+    "influence": 4,
+    "zone": 0
+  },
+  {
+    "character": "Janos",
+    "id": 81,
+    "influence": 6,
+    "zone": 0
+  },
+  {
+    "character": "Melisandre",
+    "id": 82,
+    "influence": 4,
+    "zone": 4
+  },
+  {
+    "character": "Orell",
+    "id": 83,
+    "influence": 1,
+    "zone": 0
+  },
+  {
+    "character": "Qhorin",
+    "id": 84,
+    "influence": 5,
+    "zone": 0
+  },
+  {
+    "character": "Rattleshirt",
+    "id": 85,
+    "influence": 4,
+    "zone": 0
+  },
+  {
+    "character": "Styr",
+    "id": 86,
+    "influence": 2,
+    "zone": 0
+  },
+  {
+    "character": "Val",
+    "id": 87,
+    "influence": 4,
+    "zone": 0
+  },
+  {
+    "character": "Ygritte",
+    "id": 88,
+    "influence": 4,
+    "zone": 0
+  },
+  {
+    "character": "Lancel",
+    "id": 89,
+    "influence": 1,
+    "zone": 3
+  },
+  {
+    "character": "Olenna",
+    "id": 90,
+    "influence": 2,
+    "zone": 3
+  },
+  {
+    "character": "Marillion",
+    "id": 91,
+    "influence": 3,
+    "zone": 3
+  },
+  {
+    "character": "Robert Arryn",
+    "id": 92,
+    "influence": 3,
+    "zone": 3
+  },
+  {
+    "character": "Davos",
+    "id": 93,
+    "influence": 5,
+    "zone": 4
+  },
+  {
+    "character": "Ellaria",
+    "id": 94,
+    "influence": 2,
+    "zone": 3
+  },
+  {
+    "character": "Mace",
+    "id": 95,
+    "influence": 3,
+    "zone": 3
+  },
+  {
+    "character": "Ramsay",
+    "id": 96,
+    "influence": 1,
+    "zone": 1
+  },
+  {
+    "character": "Rickard",
+    "id": 97,
+    "influence": 2,
+    "zone": 1
+  },
+  {
+    "character": "Chataya",
+    "id": 98,
+    "influence": 2,
+    "zone": 3
+  },
+  {
+    "character": "Doran",
+    "id": 99,
+    "influence": 1,
+    "zone": 3
+  },
+  {
+    "character": "Aerys",
+    "id": 100,
+    "influence": 4,
+    "zone": 3
+  },
+  {
+    "character": "Amory",
+    "id": 101,
+    "influence": 1,
+    "zone": 3
+  },
+  {
+    "character": "Daenerys",
+    "id": 102,
+    "influence": 14,
+    "zone": 6
+  },
+  {
+    "character": "Eddard",
+    "id": 103,
+    "influence": 12,
+    "zone": 5
+  },
+  {
+    "character": "Jon Arryn",
+    "id": 104,
+    "influence": 2,
+    "zone": 3
+  },
+  {
+    "character": "Shireen",
+    "id": 105,
+    "influence": 1,
+    "zone": 4
+  },
+  {
+    "character": "Walton",
+    "id": 106,
+    "influence": 1,
+    "zone": 3
+  }
+],
   "links": [{
       "source": 77,
       "target": 0,
