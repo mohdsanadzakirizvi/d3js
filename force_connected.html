@@ -28,7 +28,7 @@
 	};
 	var width = 960 - margin.left - margin.right;
 	var height = 700 - margin.top - margin.bottom;
-	//Color Load
+	//Load Color Scale
 	var c10 = d3.scale.category10();
 	//Load External Data
 	d3.json("got_social_graph.json", function(dataset){
@@ -84,7 +84,7 @@
 			link.attr("y1", function(d){ return d.source.y; })
 			link.attr("x2", function(d){ return d.target.x; })
 			link.attr("y2", function(d){ return d.target.y; });
-
+			//Shift node a little
 		    node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
 		});
 		//Start the force layout calculation
