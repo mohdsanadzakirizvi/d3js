@@ -17,7 +17,7 @@
 		<link rel="stylesheet" type="text/css" href="main.css">
 	</head>
 	<body>
-	<h3>Force-Directed Chart</h3>
+	<h3>Game of Thrones-Social Network Analysis</h3>
 	<script type="text/javascript">
 	//Set margins and sizes
 	var margin = {
@@ -44,13 +44,14 @@
 						.nodes(nodes)
 						.links(links)
 						.gravity(0.05)
-						.charge(-100)
+						.charge(-200)
 						.linkDistance(180);
 		//Add links to SVG
 		var link = svgElement.selectAll(".link")
 					.data(links)
 					.enter()
 					.append("line")
+					.attr("stroke-width", function(d){ return d.weight/10; })
 					.attr("class", "link");
 		//Add nodes to SVG
 		var node = svgElement.selectAll(".node")
@@ -63,11 +64,11 @@
 		var label = node.append("text")
 						.attr("dx", 12)
 						.attr("dy", "0.35em")
-						.attr("font-size", function(d){ return d.influence*1.5>7.5? d.influence*1.5: 7.5; })
+						.attr("font-size", function(d){ return d.influence*1.5>9? d.influence*1.5: 9; })
 						.text(function(d){ return d.character; });
 		//add circles to each node
 		var circle = node.append("circle")
-						.attr("r", 5)
+						.attr("r", function(d){ return d.influence/3; })
 						.attr("fill", "steelblue");
 		//This function will be executed once force layout is done with its calculations
 		force.on("tick", function(){
