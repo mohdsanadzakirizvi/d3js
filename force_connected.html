@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="d3.min.js"></script>
+		<style>
+			body{ font: Arial 12px; text-align: center;}
+
+			.link {
+			  stroke: #ccc;
+			}
+
+			.node text {
+			  pointer-events: none;
+			  font: sans-serif;
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+	<body>
+	<h3>Force-Directed Chart</h3>
+	<script type="text/javascript">
+	//Set margins and sizes
+	var margin = {
+		top: 20,
+		bottom: 50,
+		right: 30,
+		left: 50
+	};
+	var width = 960 - margin.left - margin.right;
+	var height = 700 - margin.top - margin.bottom;
+	//Load External Data
+	d3.json("got_social_graph.json", function(dataset){
+		//Extract data from dataset
+		var nodes = dataset.nodes,
+			links = dataset.links;
+		//Create an SVG element and append it to the DOM
+		var svgElement = d3.select("body")
+							.append("svg").attr({"width": width+margin.left+margin.right, "height": height+margin.top+margin.bottom})
+							.append("g")
+							.attr("transform","translate("+margin.left+","+margin.top+")");
+		//Create Force Layout
+		var force = d3.layout.force()
+						.size([width, height])
+						.nodes(nodes)
+						.links(links)
+						.gravity(0.05)
+						.charge(-100)
+						.linkDistance(180);
+		//Add links to SVG
+		var link = svgElement.selectAll(".link")
+					.data(links)
+					.enter()
+					.append("line")
+					.attr("class", "link");
+		//Add nodes to SVG
+		var node = svgElement.selectAll(".node")
+					.data(nodes)
+					.enter()
+					.append("g")
+					.attr("class", "node")
+					.call(force.drag);
+		//add labels to each node
+		var label = node.append("text")
+						.attr("dx", 12)
+						.attr("dy", "0.35em")
+						.attr("font-size", function(d){ return d.influence*1.5; })
+						.text(function(d){ return d.character; });
+		//add circles to each node
+		var circle = node.append("circle")
+						.attr("r", 5)
+						.attr("fill", "steelblue");
+		//This function will be executed once force layout is done with its calculations
+		force.on("tick", function(){
+			//Set X and Y of node
+			node.attr("r", function(d){ return d.influence; })
+				.attr("cx", function(d){ return d.x; })
+				.attr("cy", function(d){ return d.y; });
+			//Set X, Y of link
+			link.attr("x1", function(d){ return d.source.x; })
+			link.attr("y1", function(d){ return d.source.y; })
+			link.attr("x2", function(d){ return d.target.x; })
+			link.attr("y2", function(d){ return d.target.y; });
+
+		    node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+		});
+		//Start the force layout calculation
+		force.start();
+	});
+	</script>
+	</body>
+</html>
