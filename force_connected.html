@@ -62,13 +62,13 @@
 					.append("g")
 					.attr("class", "node")
 					.call(force.drag);
-		//add labels to each node
+		//Add labels to each node
 		var label = node.append("text")
 						.attr("dx", 12)
 						.attr("dy", "0.35em")
 						.attr("font-size", function(d){ return d.influence*1.5>9? d.influence*1.5: 9; })
 						.text(function(d){ return d.character; });
-		//add circles to each node
+		//Add circles to each node
 		var circle = node.append("circle")
 						.attr("r", function(d){ return d.influence/2>5 ? d.influence/2 : 5; })
 						.attr("fill", function(d){ return c10(d.zone*10); });
