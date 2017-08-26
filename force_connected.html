@@ -63,7 +63,7 @@
 		var label = node.append("text")
 						.attr("dx", 12)
 						.attr("dy", "0.35em")
-						.attr("font-size", function(d){ return d.influence*1.5; })
+						.attr("font-size", function(d){ return d.influence*1.5>7.5? d.influence*1.5: 7.5; })
 						.text(function(d){ return d.character; });
 		//add circles to each node
 		var circle = node.append("circle")
