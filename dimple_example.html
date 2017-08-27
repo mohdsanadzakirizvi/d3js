@@ -4,14 +4,23 @@
   <script src="https://d3js.org/d3.v4.min.js"></script>
   <script src="http://dimplejs.org/dist/dimple.v2.3.0.min.js"></script>
   <script type="text/javascript">
+    //Create the SVG
     var svg = dimple.newSvg("#chartContainer", 590, 400);
+    //Load external data
     d3.tsv("http://dimplejs.org/data/example_data.tsv", function (data) {
+      //Create a chart object using svg and data
       var myChart = new dimple.chart(svg, data);
+      //Set the size of the plot within SVG
       myChart.setBounds(60, 30, 510, 330)
+      //Add an axis of categorical values
       myChart.addCategoryAxis("x", ["Price Tier", "Channel"]);
+      //Add an axis of continous values
       myChart.addMeasureAxis("y", "Unit Sales");
+      //Make a barchart
       myChart.addSeries("Channel", dimple.plot.bar);
+      //Add legends
       myChart.addLegend(65, 10, 510, 20, "right");
+      //Draw the chart
       myChart.draw();
     });
   </script>
