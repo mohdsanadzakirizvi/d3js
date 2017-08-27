@@ -30,16 +30,16 @@
 	var height = 700 - margin.top - margin.bottom;
 	//Load Color Scale
 	var c10 = d3.scale.category10();
+	//Create an SVG element and append it to the DOM
+	var svgElement = d3.select("body")
+						.append("svg").attr({"width": width+margin.left+margin.right, "height": height+margin.top+margin.bottom})
+						.append("g")
+						.attr("transform","translate("+margin.left+","+margin.top+")");	
 	//Load External Data
 	d3.json("got_social_graph.json", function(dataset){
 		//Extract data from dataset
 		var nodes = dataset.nodes,
 			links = dataset.links;
-		//Create an SVG element and append it to the DOM
-		var svgElement = d3.select("body")
-							.append("svg").attr({"width": width+margin.left+margin.right, "height": height+margin.top+margin.bottom})
-							.append("g")
-							.attr("transform","translate("+margin.left+","+margin.top+")");
 		//Create Force Layout
 		var force = d3.layout.force()
 						.size([width, height])
@@ -72,7 +72,6 @@
 		var circle = node.append("circle")
 						.attr("r", function(d){ return d.influence/2>5 ? d.influence/2 : 5; })
 						.attr("fill", function(d){ return c10(d.zone*10); });
-
 		//This function will be executed once force layout is done with its calculations
 		force.on("tick", function(){
 			//Set X and Y of node

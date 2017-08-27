@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="d3.min.js"></script> 
+  <style type="text/css">
+    .axis path,
+    .axis line {
+      fill: none;
+      stroke: #000;
+      shape-rendering: crispEdges;
+    }
+    .x.axis path{
+      display: none;
+    }
+
+    body{
+      font: 10px arial;
+      text-align: center;
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+  <h1>Animated Barchart</h1>
+  <script type="text/javascript">
+    //Set up margin and percentage formatter
+    var margin = {top:20, right: 30, bottom: 30, left:40};
+    var width = 800-margin.left-margin.right;
+    var height = 400-margin.top-margin.bottom;
+    //Creating a percentage formatter 
+    var formatPercent = d3.format("%.0");
+    //Create x and y scale
+    var yScale = d3.scale.linear().range([height,0]);
+    var xScale = d3.scale.ordinal().rangeRoundBands([0,width],0.1,0.2);
+    //Create category for color
+    var c10 = d3.scale.category10();    
+    //Create SVG Element
+    var svg = d3.select("body")
+          .append("svg")
+          .attr({"width":width+margin.left+margin.right,"height":height+margin.top+margin.bottom})
+          .append("g")
+          .attr("transform","translate("+margin.left+","+margin.right+")");
+
+    //Load data from external tsv file
+    d3.tsv("http://simplysanad.com/d3js/words.tsv", function(data){
+      //Set domain of x and y scales based on loaded data
+      yScale.domain([0,d3.max(data, function(d){ return d.frequency; })]);
+      xScale.domain(data.map(function(d){ return d.letter; }));
+      //Create X and Y Axis based on scales and data
+      var xAxis = d3.svg.axis()
+                .scale(xScale)
+                .orient("bottom");
+      var yAxis = d3.svg.axis()
+                .scale(yScale)
+                .orient("left")
+                .tickFormat(formatPercent);
+      //Add bars
+      var bars = svg.selectAll("rect")
+                    .data(data)
+                    .enter()
+                    .append("rect")
+                    .attr("class","bar")
+                    .attr("width", xScale.rangeBand())
+                    .attr("fill","steelblue")
+                    .attr("fill", function(d,i){
+                      return c10(Math.random()*10*i);
+                    })
+                    .attr("y", function(d){
+                      return yScale(d.frequency);
+                    })
+                    .attr("x", function(d){
+                      return xScale(d.letter);
+                    })              
+                    .attr("height", function(d){
+                      return height-yScale(d.frequency);
+                    });
+      //Add X Axis
+      svg.append("g")
+        .attr("transform","translate(0,"+height+")")
+        .call(xAxis)
+        .attr("class","x axis");
+      //Add Y Axis
+      svg.append("g")
+        .attr("class", "y axis")
+        .call(yAxis);
+    });
+  </script>
+</body>
+</html>
