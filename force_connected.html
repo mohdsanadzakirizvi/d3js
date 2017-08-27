@@ -72,7 +72,7 @@
 		var circle = node.append("circle")
 						.attr("r", function(d){ return d.influence/2>5 ? d.influence/2 : 5; })
 						.attr("fill", function(d){ return c10(d.zone*10); });
-		//This function will be executed once force layout is done with its calculations
+		//This function will be executed for every tick of force layout 
 		force.on("tick", function(){
 			//Set X and Y of node
 			node.attr("r", function(d){ return d.influence; })

@@ -1,0 +1,19 @@
+<!-- Source : http://dimplejs.org/examples_viewer.html?id=bars_vertical_grouped -->
+<html>
+<div id="chartContainer">
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="http://dimplejs.org/dist/dimple.v2.3.0.min.js"></script>
+  <script type="text/javascript">
+    var svg = dimple.newSvg("#chartContainer", 590, 400);
+    d3.tsv("http://dimplejs.org/data/example_data.tsv", function (data) {
+      var myChart = new dimple.chart(svg, data);
+      myChart.setBounds(60, 30, 510, 330)
+      myChart.addCategoryAxis("x", ["Price Tier", "Channel"]);
+      myChart.addMeasureAxis("y", "Unit Sales");
+      myChart.addSeries("Channel", dimple.plot.bar);
+      myChart.addLegend(65, 10, 510, 20, "right");
+      myChart.draw();
+    });
+  </script>
+</div>
+</html>
